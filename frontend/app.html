@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B5D3B">
+  <title>AmataShield</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="shell" class="hidden">
+    <header class="app-header">
+      <img src="/assets/logo-mark.svg" alt="">
+      <div class="brand">Amata<span>Shield</span></div>
+      <a class="icon-btn" href="#/notifications" aria-label="Notifications">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17V11a6 6 0 1112 0v6l2 2H4z"/><path d="M10 21h4"/></svg>
+        <span id="bell" class="badge-dot hidden">0</span>
+      </a>
+    </header>
+    <main id="main"><div class="spinner" role="status" aria-label="Loading"></div></main>
+    <nav id="nav" class="bottom-nav" aria-label="Main"></nav>
+  </div>
+  <noscript><p class="center">AmataShield needs JavaScript. Please enable it in your browser.</p></noscript>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B5D3B">
+  <title>Create account - AmataShield</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="auth-wrap">
+    <a href="/"><img class="logo" src="/assets/logo.svg" alt="AmataShield"></a>
+    <div class="card">
+      <h1>Create your account</h1>
+      <form id="register" novalidate>
+        <label>I am a...</label>
+        <div class="role-grid" id="roles"></div>
+        <label for="full_name">Full name *</label>
+        <input id="full_name" name="full_name" autocomplete="name" required>
+        <label for="phone">Phone number *</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="username" placeholder="0788 123 456" required>
+        <label for="password">Password *</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" required>
+        <div class="hint">At least 8 characters with a letter and a number.</div>
+        <label for="district">District</label>
+        <select id="district" name="district"></select>
+        <div id="extra"></div>
+        <label class="check mt12"><input type="checkbox" id="consent"> <span>I agree that AmataShield stores my phone number, deal records, photos and payment statements, and shows them to the people in my deals. *</span></label>
+        <div id="err" class="err hidden" role="alert"></div>
+        <button class="btn gold block mt14" type="submit">Create account</button>
+      </form>
+      <p class="center mt14">Already registered? <a href="/login.html">Log in</a></p>
+    </div>
+  </div>
+  <script type="module" src="/js/auth.js"></script>
+</body>
+</html>

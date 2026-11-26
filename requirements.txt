@@ -1,0 +1,5 @@
+Flask>=3.0,<4
+python-dotenv>=1.0
+requests>=2.31
+# Optional, only for scripts/seed_demo.py (makes demo photos):
+Pillow>=10.0
